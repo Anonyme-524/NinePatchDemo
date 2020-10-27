@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NinePatchDemo</string>
+    <string name="Group_name">今晚打阿威(6)</string>
+    <string name="choice">•••</string>
+    <string name="chat">在此输入消息</string>
+    <string name="yuying" />
+    <string name="biaoqing" />
+    <string name="send_bg">在此输入消息</string>
+    <string name="Chat_bar" />
+    <string name="wechat_return" />
+    <string name="we" />
+    <string name="you" />
+</resources>
