@@ -2,7 +2,6 @@ package com.example.ninepatchdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import androidx.recyclerview.widget.LinearLayoutManager
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter
 import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter
