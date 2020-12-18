@@ -2,17 +2,10 @@ package com.example.ninepatchdemo
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ninepatchdemo.Fruit
-import com.example.ninepatchdemo.FruitAdapter
-import com.example.ninepatchdemo.R
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main1.*
-import java.text.SimpleDateFormat
-import java.util.*
+import kotlinx.android.synthetic.main.navigation_wx.*
 import kotlin.collections.ArrayList
 
 class MainActivity1 : AppCompatActivity() {
@@ -22,18 +15,16 @@ class MainActivity1 : AppCompatActivity() {
     private fun intiFruits(){
         repeat(2)
         {
-            fruitList.add(Fruit("子鼠","中秋国庆快乐[动态表情]",R.drawable.animal_0))
-            fruitList.add(Fruit("丑牛","中秋国庆快乐",R.drawable.animal_1))
-            fruitList.add(Fruit("寅虎","中秋国庆快乐",R.drawable.animal_2))
-            fruitList.add(Fruit("卯兔","中秋国庆快乐",R.drawable.animal_3))
-            fruitList.add(Fruit("辰龙","中秋国庆快乐",R.drawable.animal_4))
-            fruitList.add(Fruit("巳蛇","中秋国庆快乐",R.drawable.animal_5))
-            fruitList.add(Fruit("午马","中秋国庆快乐",R.drawable.animal_6))
-            fruitList.add(Fruit("未羊","中秋国庆快乐",R.drawable.animal_7))
-            fruitList.add(Fruit("申猴","中秋国庆快乐",R.drawable.animal_8))
-            fruitList.add(Fruit("酉鸡","中秋国庆快乐",R.drawable.animal_9))
-            fruitList.add(Fruit("戌狗","中秋国庆快乐",R.drawable.animal_10))
-            fruitList.add(Fruit("亥猪","中秋国庆快乐",R.drawable.animal_11))
+            fruitList.add(Fruit("今晚打阿威","测试看看下面区域如果是个整体...",R.drawable.img_11))
+            fruitList.add(Fruit("背对背拥抱","中秋国庆快乐",R.drawable.img_2))
+            fruitList.add(Fruit("不给糖","中秋国庆快乐",R.drawable.img_3))
+            fruitList.add(Fruit("北方","中秋国庆快乐",R.drawable.img_4))
+            fruitList.add(Fruit("林妹妹","中秋国庆快乐",R.drawable.img_5))
+            fruitList.add(Fruit("顺鱼","中秋国庆快乐",R.drawable.img_6))
+            fruitList.add(Fruit("c在g上","中秋国庆快乐",R.drawable.img_7))
+            fruitList.add(Fruit("一条小鱼鱼","中秋国庆快乐",R.drawable.img_8))
+            fruitList.add(Fruit("cc","中秋国庆快乐",R.drawable.img_9))
+            fruitList.add(Fruit("西瓜子","中秋国庆快乐",R.drawable.img_10))
         }
     }
 
@@ -56,6 +47,27 @@ class MainActivity1 : AppCompatActivity() {
             Toast.makeText(this,fruit.name,Toast.LENGTH_SHORT).show()
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+        }
+
+        translate.setOnClickListener {
+            val intent1 = Intent(this, Wechat_Moments::class.java)
+            startActivity(intent1)
+        }
+
+
+        fx.setOnClickListener {
+            val intent2 = Intent(this, Find::class.java)
+            startActivity(intent2)
+        }
+
+        wo.setOnClickListener {
+            val intent3 = Intent(this, My::class.java)
+            startActivity(intent3)
+        }
+
+        txl.setOnClickListener {
+            val intent4 = Intent(this,MailListActivity::class.java)
+            startActivity(intent4)
         }
 
     }

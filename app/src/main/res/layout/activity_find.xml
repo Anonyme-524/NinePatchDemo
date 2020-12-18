@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context="com.example.liaotianyeumian.Find">
+
+    <include
+        layout="@layout/navigation_fx"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Wechat_Moments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FAF8F8"
+        android:drawableStart="@drawable/ic_pyq"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    朋友圈"
+        app:layout_constraintEnd_toEndOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FAF8F8"
+        android:drawableStart="@drawable/ic_sph"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    视频号"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/Wechat_Moments" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F6F5F5"
+        android:drawableStart="@drawable/ic_sys"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    扫一扫"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F6F5F5"
+        android:drawableStart="@drawable/ic_yaoyiyao"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    摇一摇"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F2F1F3"
+        android:drawableStart="@drawable/ic_kyk"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    看一看"
+        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F2F1F3"
+        android:drawableStart="@drawable/ic_souyisou"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    搜一搜"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F3F1F1"
+        android:drawableStart="@drawable/ic_fjr"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    表情"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F3F1F1"
+        android:drawableStart="@drawable/ic_gw"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    购物"
+        app:layout_constraintEnd_toEndOf="@+id/button12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F3F1F1"
+        android:drawableStart="@drawable/ic_yx"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    游戏"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F3F1F1"
+        android:drawableStart="@drawable/ic_xcx"
+        android:drawableEnd="@drawable/ic_dahao"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="    小程序"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
