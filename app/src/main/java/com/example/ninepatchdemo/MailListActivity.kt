@@ -20,7 +20,7 @@ class MailListActivity : AppCompatActivity() {
             startActivity(intent1)
         }
         fx.setOnClickListener {
-            val intent2 = Intent(this,MainActivity1::class.java)
+            val intent2 = Intent(this,Find::class.java)
             startActivity(intent2)
         }
         wo.setOnClickListener {
